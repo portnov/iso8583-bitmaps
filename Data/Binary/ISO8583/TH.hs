@@ -14,7 +14,7 @@
 --
 ----------------------------------------------------------------------------
 
-module Data.Binary.Bitmap.TH
+module Data.Binary.ISO8583.TH
   (-- * Usage
    -- $usage
    FieldType (..),
@@ -44,7 +44,7 @@ import Data.Binary
 import Data.Binary.Get
 import Data.Binary.Put
 
-import Data.Binary.Bitmap
+import Data.Binary.ISO8583
 
 -- $usage
 --

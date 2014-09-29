@@ -14,7 +14,7 @@
 --
 ----------------------------------------------------------------------------
 
-module Data.Binary.Bitmap
+module Data.Binary.ISO8583
  (-- * Usage
   -- $usage
   getBitmapFieldNumbers, 

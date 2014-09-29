@@ -12,8 +12,8 @@ import Data.Binary.Put
 import qualified Data.Map as M
 import Data.Generics
 
-import Data.Binary.Bitmap
-import Data.Binary.Bitmap.TH
+import Data.Binary.ISO8583
+import Data.Binary.ISO8583.TH
 
 [binary|
   Message
