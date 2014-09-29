@@ -2,3 +2,5 @@
 *.o
 dist/
 *.bin
+cabal.sandbox.config
+.cabal-sandbox/
