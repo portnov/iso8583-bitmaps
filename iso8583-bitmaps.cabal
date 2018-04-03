@@ -2,7 +2,7 @@
 -- documentation, see http://haskell.org/cabal/users-guide/
 
 name:                iso8583-bitmaps
-version:             0.1.0.0
+version:             0.1.1.0
 synopsis:            Parse and merge ISO 8583-style bitmaps
 description:         This package provides utility methods for writing
                      Get and Put methods (in terms of Data.Binary) for parsing and
@@ -32,7 +32,7 @@ library
                        bytestring >=0.9,
                        containers >=0.4,
                        parsec >=3.1,
-                       template-haskell >=2.7,
+                       template-haskell >=2.12,
                        th-lift >=0.6,
                        syb >= 0.3.6
 

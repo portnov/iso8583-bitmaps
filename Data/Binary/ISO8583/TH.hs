@@ -201,11 +201,12 @@ generateData nameStr fields = do
     let name = mkName nameStr
     fields' <- mapM convertField fields
     let constructor = RecC name fields'
-    return [ DataD [] name [] [constructor] [] ]
+    return [ DataD [] name [] Nothing [constructor] [] ]
   where
     convertField (Field _ fname ftype) = do
       t <- convertType ftype
-      return (mkName fname, NotStrict, t)
+      let bang = Bang NoSourceUnpackedness SourceStrict
+      return (mkName fname, bang, t)
 
     convertType (TInt _) = [t| Maybe Integer |]
     convertType (TString _) = [t| Maybe B.ByteString |]
